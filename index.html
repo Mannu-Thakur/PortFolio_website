@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoo.jpg"  class="logo">
+               <ul id="sidemenu">
+                     
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times menu-icon" onclick="closemenu()"></i>  
+                </ul>
+               <i class="fas fa-bars menu-icon" onclick = "openmenu()"></i>
+
+            </nav>
+            <div class = 'header-text'>
+                
+                <p>Hi there!👋 <br> I'm <span>Mannu!</span> </p>
+                 <h1 id = "typingHeading"></h1>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/k.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> I'm Mannu, a passionate web developer and competitive programmer who loves crafting clean,
+                         responsive web experiences and solving challenging problems through data structures and algorithms (DSA). 
+                         I enjoy building functional, user-centric websites and sharpening my logical thinking through CP contests.
+                          With a constant drive to learn and grow, I blend creativity with efficiency to bring ideas to life on the web.</p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick ="opentab('experience')">experience</p>
+                        <p class = "tab-links" onclick ="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id ="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br>
+                            Building web apps using MERN stack (MongoDB, Express, React, Node)
+                            </li>
+                            <li><span>Competitive Programming</span><br>
+                            Practicing on Codeforces, LeetCode, CodeChef,GeeksforGeeks and Coding Ninjas
+                            </li>
+                            <li><span>Frontend</span><br>
+                            Creating responsive UIs using HTML, CSS, and JavaScript
+                            </li>
+                            <li><span>Version Control</span><br>
+                            Using Git and GitHub for project collaboration
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                        <div class="tab-contents" id ="experience">
+                        <ul>
+                            <li><span>Full Stack Web Apps</span><br>
+                            Developed beginner-level projects using HTML, CSS, JavaScript while learning the MERN stack.
+                            </li>
+
+                            <li><span>Mini Projects</span><br>
+                            Built a Digital Clock (JavaScript) and a Console-based Game (C++) to practice core development and logic.
+                            </li>
+                        </ul>
+                        </div>
+
+
+
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in Computer Science</span><br>
+                        International Institute of Information Technology (IIIT), Bhubaneswar — 2023 – Present
+                        </li>
+                        <li>"Ongoing CGPA: > 8.4 (on a 10-point scale)"</li>
+                        <li><span>Class 12 (Science Stream)</span><br>
+                        Completed in 2022
+                        </li>
+                        <li><span>Class 10</span><br>
+                        Completed in 2020
+                        </li>
+                    </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-----------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                    I build responsive and user-friendly websites using HTML, CSS, JavaScript, and I'm currently learning the MERN stack for full-stack development.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Web_development"  onclick = "changeColor(this)">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Competitive Programming</h2>
+                <p>
+                    I regularly participate in contests on platforms like Codeforces, LeetCode, and CodeChef to improve my problem-solving speed and logical thinking.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Competitive_programming" class = "learn-more" onclick = "changeColor(this)">Learn more</a>
+            </div>
+
+         </div>
+    </div>
+</div>
+
+<!----------coding_accounts-->
+<div id="coding_accounts">
+    <div class="container">
+        <h1 class = "sub-title">Profiles<i class="fa-solid fa-code"></i> </h1>
+        <div class="accounts-list">
+            <div class = "account">
+                 
+                <a href="https://leetcode.com/u/mkt2016/" class = "learn-more" onclick = "changeColor(this)">LeetCode</a>
+                <a href="https://codeforces.com/profile/mannuKT" class = "learn-more" onclick = "changeColor(this)" >Codeforces</a>
+                <a href="https://www.geeksforgeeks.org/user/b523mvqm/" class = "learn-more" onclick = "changeColor(this)">GeeksforGeeks</a>
+                <a href="https://www.naukri.com/code360/profile/ktmannu" class = "learn-more" onclick = "changeColor(this)">CodingNinjas</a>
+                <a href="https://www.codechef.com/users/ktmannu" class = "learn-more" onclick = "changeColor(this)" >CodeChef</a>
+            </div> 
+        </div>
+    </div>  
+</div>
+
+
+<!-----------portfolio---------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class = "work">
+                <img src="images/1.jpg" alt="">
+                 <div class=" layer">
+                    <h3>Classic Snake-game</h3>
+                    <p>Snake is a game where you control a growing snake to eat food and avoid hitting walls or itself. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                 </div>
+                 
+            </div>
+
+            <div class = "work">
+                <img src="images/2.jpg" alt="">
+                <div class=" layer">
+                    <h3>Digital Watch</h3>
+                    <p>A modern watch that displays time with digits on an LED or LCD screen. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                 </div>
+                 
+               
+            </div>
+
+            <div class = "work">
+                <img src="images/3.jpg" alt="">
+                <div class=" layer">
+                    <h3>Analog watch</h3>
+                    <p>: A classic watch that shows time using hour, minute, and second hands. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                 </div>
+                 
+                 
+            </div>
+
+        </div>
+
+        <a href="https://github.com/Mannu-Thakur" class="btn" class = "learn-more" onclick = "changeColor(this)" >See more...</a>
+    </div>
+
+</div>
+
+
+<!-----------contact--------->
+
+<div id="contact">
+    <div class = container>
+        <div class = "row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mannumay15@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7827075170</p>
+                <div class = "social-icons">
+                     <a href="https://github.com/Mannu-Thakur"><i class="fa-brands fa-github"></i></a>
+                     <a href="https://www.linkedin.com/in/mannu-kumar-thakur-6903a0348/"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="https://www.instagram.com/i.leo18/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://x.com/mkt_15may?t=c2kokX0h_sSq06_sQNETxw&s=09"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
+
+                <a href="images/ktm_r.pdf" download class ="btn btn2" class = "learn-more" onclick = "changeColor(this)" >Download CV </a>
+            </div>
+
+            <div class ="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name = "Email" placeholder="Your Email" required>
+                    <textarea  name = "Message" rows="6"  placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2" class = "learn-more" onclick = "changeColor(this)" >Send</button>
+                </form>
+                
+                <span id="msg"> </span>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 Mannu. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> Designed by Mannu Kumar Thakur</p>
+    </div>
+</div>  
+   
+
+<button id="backToTop" title="Back to Top">↑</button>
+
+<script>
+            const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+</script>
+
+
+ <!----------says like "i code, i craft" and then disappears smoothly out of the screen after getting larger and larger like if we are the top screen then it should emerges small and then larges and disapperas out at the bottom of the same screen-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------footer---------------->
+     <!-- ... (Your existing HTML content above remains unchanged) -->
+
+<!-- Footer Scripts -->
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    // Tabs switching
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-------------typing effect for heading---------------->
+
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+  const heading = document.getElementById('typingHeading');           
+  const text = " Discover my work and projects";
+
+  let index = 0;
+
+  function typeWord() {
+    if (index < text.length) {
+      heading.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeWord, 70); 
+    }  
+  }
+ setTimeout(typeWord, 4000);
+});
+
+</script>
+
+
+<!-- detect bottom -->
+<script>
+    // Detect bottom of the page
+    window.addEventListener('scroll', () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            console.log("You've reached the bottom of the page!");
+        }
+    });
+</script>
+ 
+
+<script>
+    // Button color changer
+    function changeColor(element){
+        element.classList.add('clicked');
+        setTimeout(function() {
+            element.classList.remove('clicked');
+        }, 20000);
+    }
+</script>
+
+<script>
+    // Sidebar menu
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }  
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    // Google Sheets form submit
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxw-4YfmeIKKehDPwZ3f148KNqjsVynfULI4gnEkzDmoVnZy-HFu0shgpe0B-yk5a4Y/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "✅ Message sent successfully!";
+                setTimeout(() => msg.innerHTML = "", 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
+<!-- ✅ Enhanced SweetAlert2 Welcome & Thank You Popups -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+window.addEventListener("load", function () {
+  const quotes = [
+    {
+      text: "You have to fight to reach your dream. You have to sacrifice and work hard for it.",
+      author: "– Lionel Messi"
+    },
+    {
+      text: "Self-belief and hard work will always earn you success.",
+      author: "– Virat Kohli"
+    }
+  ];
+
+  // Pick one quote randomly
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+  // Time-based greeting
+  const hour = new Date().getHours();
+  let greeting = "";
+
+  if (hour >= 5 && hour < 12) {
+    greeting = "🌞 Good Morning!";
+  } else if (hour >= 12 && hour < 17) {
+    greeting = "☀️ Good Afternoon!";
+  } else if (hour >= 17 && hour < 21) {
+    greeting = "🌇 Good Evening!";
+  } else {
+    greeting = "🌙 Good Night!";
+  }
+
+  // Show SweetAlert popup with greeting + quote
+  Swal.fire({
+    title: greeting,
+    html: `<p style="margin-bottom:10px;">Glad to see you here!</p><blockquote style="font-style:italic;">"${randomQuote.text}"<br><small>${randomQuote.author}</small></blockquote>`,
+    icon: "info",
+    background: "#1e1e1e",
+    color: "#ffffff",
+    timer: 4000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  });
+});
+</script>   
+
+
+<!----thank you pop ups when reaching page bottom of a student portfolio website. so say accorgingly and formally. and impactful with precise-->
+
+<script>
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        Swal.fire({
+            title: 'Thank You for Visiting!',
+            text: 'I appreciate your time and interest in my work. Feel free to connect with me for any queries or collaborations.',
+            icon: 'success',
+            background: '#1e1e1e',
+            color: '#ffffff',
+            confirmButtonText: 'Close',
+            showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+            }
+        });
+    }
+});
+</script>
+
+
+<!------adding passwords to my portfolio website-->
+
+
+
+<!-- Animate.css for smooth animations and set password mannu@20-->
+
+<div class="modal" id="passwordModal">
+  <div class="modal-content">
+    <h2>Enter password to access portfolio</h2>
+    <input type="password" id="passwordInput" placeholder="Enter password" />
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+ <script>
+function checkPassword() {
+  const password = document.getElementById('passwordInput').value;
+  if (password === "mannu@20") {
+    document.getElementById('passwordModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Allow scrolling again
+  } else {
+    alert("Incorrect password. Redirecting...");
+    window.location.href = "https://www.google.com";
+  }
+}
+
+// Prevent scrolling until unlocked
+document.body.style.overflow = 'hidden';
+</script>
+
+<!----decorate the password animations and pops -->
+
+
+
+
+
+
+
+<!-- Animate.css for smooth animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
