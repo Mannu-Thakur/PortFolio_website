@@ -3,4 +3,4 @@ A personal portfolio website to showcase my skills, projects, and experience. Bu
 
 Tech Stack: HTML | CSS | JavaScript 
  
-live DEMO: https://mannu-portfolio.netlify.app/
+live DEMO:  (https://sage-belekoy-418ea5.netlify.app/)
