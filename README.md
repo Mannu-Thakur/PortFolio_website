@@ -3,4 +3,4 @@ A personal portfolio website to showcase my skills, projects, and experience. Bu
 
 Tech Stack: HTML | CSS | JavaScript 
  
-live DEMO:  incredible-kitsune-b62d97.netlify.app
+live DEMO:  https://incredible-kitsune-b62d97.netlify.app/
