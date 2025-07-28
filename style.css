@@ -16,7 +16,7 @@ body{
 #header{
     width : 100%;
     height:100vh;
-    background-image: url(Images/man.jpg);
+    background-image: url(Images/mann.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -417,19 +417,146 @@ form .btn2{
   transform: translateY(-5px);
 }
 
+.learn-more{
+    color:rgb(106, 255, 0);
+    transition: colr 0.5s ease;
+}
+
+.learn-more.clicked{
+    color: #0a0a0a;
+}
+
+/* textarea{
+    resize: none;
+  
+} */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  font-size: 24px;
+  border: none;
+  background-color: #ff6f61; /* coral/orange color */
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  display: none; /* hidden by default */
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #ff3b2e;
+  transform: scale(1.1);
+}
+
+#clock {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  z-index: 9999;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e1e;
+  color: white;
+  /* REMOVE or COMMENT the line below */
+  /* overflow: hidden; */
+}
+
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-content {
+  background: #2c2c2c;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #6ea3ff;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #5a8be0;
+}
+
+
+#menu-icon {
+  display: none; /* Default hidden — controlled by JS */
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 
 /*----------css for small screen devices----------*/
  
 
 /*---------- Responsive Styles for Small Screens ----------*/
- .menu-icon{
-    display: none;
- }
+/*---------- Responsive Styles for Small Screens ----------*/
+
+/* Responsive styles for screens smaller than 600px */
 
 @media only screen and (max-width: 600px) {
   /* Header Background */
   #header {
-    background-image: url(images/man.jpg);
+    background-image: url(images/mann.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -512,7 +639,6 @@ form .btn2{
     font-size: 14px;
   }
 
-
   /*coding accounts on smaller screen*/
   #coding_accounts .sub-title {
     font-size: 1.3rem;
@@ -529,8 +655,23 @@ form .btn2{
     width: 80%;
   }
 
-}
+  /* Back to Top button responsive */
+  #backToTop {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 18px !important;
+    bottom: 20px !important;
+    right: 15px !important;
+  }
 
+  /* SweetAlert2 greeting popup responsive tweaks */
+  .swal2-popup {
+    max-width: 90vw !important; /* nearly full width on small screens */
+    font-size: 0.9rem !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+  }
+}
 
 #msg{
     color:#61b752;
@@ -538,3 +679,21 @@ form .btn2{
     display: block;
 }
 
+#open-icon, #close-icon {
+  display: none; /* Default hidden — controlled by JS */
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #open-icon {
+    display: block;
+  }
+
+  #close-icon {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 25px;
+  }
+}
